@@ -3,42 +3,103 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قسم المقاولات | بناء عظم وتشييد</title>
+    <title>قسم المقاولات | بناء عظم وتشييد - مؤسسة مدماك الجنوب</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body { font-family: 'Cairo', sans-serif; }
+        .glass-effect { background: rgba(255, 255, 255, 0.95); backdrop-filter: blur(10px); }
+        .gradient-text { background: linear-gradient(90deg, #1e3a8a, #3b82f6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .whatsapp-float { position: fixed; bottom: 60px; right: 20px; background-color: #25d366; color: #FFF; border-radius: 50px; text-align: center; font-size: 30px; box-shadow: 2px 2px 3px #999; z-index: 100; transition: transform 0.3s; }
+        .whatsapp-float:hover { transform: scale(1.1); color: #fff; }
+        .service-card { transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+        .service-card:hover { transform: translateY(-10px); }
+    </style>
 </head>
-<body class="bg-gray-50 font-['Cairo']">
+<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
 
-    <nav class="bg-blue-900 text-white p-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="font-bold">← العودة للرئيسية</a>
-            <span class="text-xl font-bold">مدماك الجنوب - قسم المقاولات</span>
+    <a href="https://wa.me/9665XXXXXXXX" class="whatsapp-float w-16 h-16 flex items-center justify-center shadow-2xl" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <nav class="sticky top-0 z-50 glass-effect border-b border-gray-100 shadow-sm">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 group">
+                <span class="bg-blue-900 text-white p-2 rounded-lg group-hover:bg-blue-700 transition"><i class="fas fa-arrow-right"></i></span>
+                <span class="font-bold text-blue-900">العودة للرئيسية</span>
+            </a>
+            <div class="text-xl font-black gradient-text">مدماك الجنوب للمقاولات</div>
         </div>
     </nav>
 
-    <section class="py-16 max-w-5xl mx-auto px-6">
-        <div class="bg-white p-8 rounded-3xl shadow-xl border-t-8 border-blue-900">
-            <h1 class="text-4xl font-bold text-blue-900 mb-6">متخصصون في بناء العظم</h1>
-            <p class="text-lg text-gray-600 mb-8">نحن في مؤسسة مدماك الجنوب نلتزم بالدقة المتناهية في أعمال التشييد والبناء بالعظم، مع إشراف هندسي متكامل ومطابقة لكافة الأكواد السعودية للبناء.</p>
-            
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="space-y-4">
-                    <h2 class="text-2xl font-bold text-gray-800">مميزاتنا في البناء:</h2>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-2">✅ توريد أفضل أنواع الحديد والخرسانة.</li>
-                        <li class="flex items-center gap-2">✅ عزل مائي وحراري عالي الجودة للقواعد والميدات.</li>
-                        <li class="flex items-center gap-2">✅ فريق عمل متخصص وخبرة طويلة في المنطقة الجنوبية.</li>
-                        <li class="flex items-center gap-2">✅ التزام تام بالمخططات والجداول الزمنية.</li>
-                    </ul>
+    <section class="relative bg-blue-900 py-20 overflow-hidden">
+        <div class="absolute inset-0 opacity-20 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+        <div class="max-w-7xl mx-auto px-6 relative z-10 text-center">
+            <h1 class="text-4xl md:text-6xl font-black text-white mb-6 leading-tight">ريادة في <span class="text-blue-400">بناء العظم</span> والتشييد</h1>
+            <p class="text-blue-100 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed">نحول المخططات الهندسية إلى واقع إنشائي متين، مع الالتزام التام بأعلى معايير الجودة والأمان.</p>
+        </div>
+    </section>
+
+    <section class="py-20 max-w-7xl mx-auto px-6">
+        <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+                <h2 class="text-3xl font-black text-blue-900 mb-8 border-r-8 border-blue-600 pr-4">خبرتنا في البناء الحديث</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-lg transition">
+                        <div class="text-blue-600 text-2xl"><i class="fas fa-check-double"></i></div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-1 text-gray-800">جودة المواد</h3>
+                            <p class="text-gray-600 italic">توريد أفضل أنواع الحديد والخرسانة المطابقة للمواصفات.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-lg transition">
+                        <div class="text-blue-600 text-2xl"><i class="fas fa-shield-alt"></i></div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-1 text-gray-800">عزل هندسي متطور</h3>
+                            <p class="text-gray-600 italic">عزل مائي وحراري عالي الجودة للقواعد والميدات.</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 p-4 rounded-2xl hover:bg-white hover:shadow-lg transition">
+                        <div class="text-blue-600 text-2xl"><i class="fas fa-users-cog"></i></div>
+                        <div>
+                            <h3 class="font-bold text-xl mb-1 text-gray-800">فريق عمل متخصص</h3>
+                            <p class="text-gray-600 italic">نمتلك خبرة طويلة وطواقم فنية محترفة في المنطقة الجنوبية.</p>
+                        </div>
+                    </div>
                 </div>
-                <img src="https://images.unsplash.com/photo-1541913080211-483019875154?auto=format&fit=crop&w=500" class="rounded-2xl shadow-lg h-64 object-cover">
+            </div>
+            
+            <div class="relative group">
+                <div class="absolute -inset-4 bg-gradient-to-r from-blue-600 to-blue-400 rounded-3xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                <div class="relative grid grid-cols-2 gap-4">
+                    <img src="https://images.unsplash.com/photo-1541913080211-483019875154?auto=format&fit=crop&w=600&q=80" alt="بناء عظم" class="rounded-2xl shadow-xl h-64 w-full object-cover">
+                    <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=600&q=80" alt="أدوات بناء" class="rounded-2xl shadow-xl h-64 w-full object-cover mt-8">
+                    <img src="https://images.unsplash.com/photo-1590644365607-1c5a519a7a37?auto=format&fit=crop&w=600&q=80" alt="خرسانة" class="rounded-2xl shadow-xl h-64 w-full object-cover -mt-8">
+                    <img src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?auto=format&fit=crop&w=600&q=80" alt="إشراف هندسي" class="rounded-2xl shadow-xl h-64 w-full object-cover">
+                </div>
             </div>
         </div>
     </section>
 
-    <div id="screen-detector" class="fixed bottom-0 left-0 w-full bg-black/80 text-white text-[10px] p-1 flex justify-center gap-4">
-        <span id="screen-dim">--</span> | <span id="screen-type">--</span>
-    </div>
-    <script src="script.js"></script>
+    <footer class="bg-blue-900 py-10 text-center text-white border-t-4 border-blue-400">
+        <p class="mb-4 font-bold">© 2024 مؤسسة مدماك الجنوب - جودة نبني بها المستقبل</p>
+        <div id="screen-info" class="inline-flex gap-6 bg-white/10 px-6 py-2 rounded-full text-xs font-mono">
+            <span id="screen-dim">تحميل...</span>
+            <span id="device-type" class="border-r border-white/20 pr-6">تحميل...</span>
+        </div>
+    </footer>
+
+    <script>
+        function updateScreen() {
+            const w = window.innerWidth;
+            const h = window.innerHeight;
+            let type = w < 768 ? "جوال (Mobile)" : w < 1024 ? "لوحي (Tablet)" : "كمبيوتر (Desktop)";
+            document.getElementById('screen-dim').innerText = `الأبعاد: ${w}px × ${h}px`;
+            document.getElementById('device-type').innerText = `الجهاز: ${type}`;
+        }
+        window.onresize = updateScreen;
+        window.onload = updateScreen;
+    </script>
 </body>
 </html>
