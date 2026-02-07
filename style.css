@@ -1,24 +1,52 @@
 :root {
-    --primary: #1e3a8a; /* كحلي ملكي */
-    --accent: #f59e0b;  /* ذهبي جذاب */
-    --glass: rgba(255, 255, 255, 0.9);
+    --gold: #D4AF37;
+    --navy: #001F3F;
+    --black: #050505;
+    --white: #ffffff;
 }
 
-body { font-family: 'Cairo', sans-serif; background-color: #f8fafc; }
+body {
+    font-family: 'Cairo', sans-serif;
+    background-color: var(--black);
+    color: var(--white);
+    margin: 0;
+    scroll-behavior: smooth;
+}
 
-.nav-glass {
-    background: var(--glass);
+/* الهوية البصرية الجديدة */
+.bg-navy { background-color: var(--navy); }
+.text-gold { color: var(--gold); }
+.border-gold { border-color: var(--gold); }
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(0,0,0,0.05);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+    transition: 0.3s ease;
 }
 
-.btn-primary {
-    background-color: var(--primary);
-    color: white;
-    transition: all 0.3s ease;
+.glass-card:hover {
+    border-color: var(--gold);
+    transform: translateY(-5px);
 }
 
-.btn-primary:hover {
-    background-color: #1e40af;
-    transform: translateY(-2px);
+.lang-switch {
+    cursor: pointer;
+    border: 1px solid var(--gold);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: var(--gold);
+}
+
+/* كاشف الشاشة المطور */
+#screen-info {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 31, 63, 0.9);
+    border-top: 1px solid var(--gold);
+    padding: 5px;
+    font-size: 10px;
+    text-align: center;
+    z-index: 1000;
 }
