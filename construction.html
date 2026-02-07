@@ -6,94 +6,52 @@
     <title>قسم المقاولات | مدماك الجنوب</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <style>
-        :root { --gold: #C5A059; --dark: #0A0A0A; --deep-navy: #020617; }
-        body { font-family: 'Cairo', sans-serif; background-color: var(--dark); color: white; }
-        
-        .gold-text { color: var(--gold); }
-        .gold-gradient-bg { background: linear-gradient(135deg, #C5A059 0%, #B38B45 100%); }
-        
-        /* تأثير بؤرة الضوء خلف الصور */
-        .image-glow { position: relative; }
-        .image-glow::after {
-            content: ''; position: absolute; inset: -10px;
-            background: radial-gradient(circle, rgba(197, 160, 89, 0.2) 0%, transparent 70%);
-            z-index: -1;
-        }
-
-        /* كروت الخدمات الاحترافية */
-        .feature-card {
-            background: #111;
-            border: 1px solid rgba(255,255,255,0.05);
-            transition: 0.4s;
-        }
-        .feature-card:hover { border-color: var(--gold); transform: translateY(-10px); }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body class="bg-[#0A0A0A] text-white">
 
-    <nav class="p-6 border-b border-white/10 flex justify-between items-center sticky top-0 bg-black/80 backdrop-blur-lg z-50">
-        <a href="index.html" class="text-gold font-bold hover:scale-110 transition">← العودة للرئيسية</a>
-        <div class="text-xl font-black tracking-widest gold-text">CONSTRUCTION DIVISION</div>
+    <nav class="p-6 border-b border-white/10 flex justify-between items-center bg-black/80">
+        <a href="index.html" class="text-[#C5A059] font-bold">← العودة للنشاط العقاري</a>
+        <div class="text-xl font-black text-[#C5A059]">CONSTRUCTION ART</div>
     </nav>
 
-    <header class="py-20 px-6 text-center bg-gradient-to-b from-slate-950 to-black">
-        <h1 class="text-4xl md:text-7xl font-black mb-6 animate__animated animate__fadeInDown">إتقان <span class="gold-text">البناء</span></h1>
-        <p class="text-gray-400 max-w-2xl mx-auto text-lg italic">نحن لا نبني جدراناً، نحن نشيد صروحاً تدوم للأجيال في قلب المنطقة الجنوبية.</p>
+    <header class="py-24 px-6 text-center">
+        <h1 class="text-4xl md:text-7xl font-black mb-6">أساسات <span class="text-[#C5A059]">لا تهتز</span></h1>
+        <p class="text-gray-400 max-w-2xl mx-auto text-lg leading-relaxed">في قسم المقاولات بمدماك الجنوب، نؤمن أن الجمال يبدأ من الداخل. بناء العظم لدينا ليس مجرد خرسانة وحديد، بل هو الالتزام بالصلابة التي ستحمي أحلامك لعقود طويلة.</p>
     </header>
 
-    <section class="py-20 px-6 max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div class="image-glow animate__animated animate__fadeInLeft">
-                <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=1000" alt="بناء عظم" class="rounded-3xl shadow-2xl grayscale hover:grayscale-0 transition duration-700">
-            </div>
-            <div class="space-y-8 animate__animated animate__fadeInRight">
-                <h2 class="text-3xl font-bold border-r-4 border-gold pr-4">هندسة بناء العظم (Skeleton)</h2>
-                <p class="text-gray-400 leading-relaxed">متخصصون في تنفيذ الهياكل الإنشائية بجميع مراحلها، من القواعد الخرسانية والميدات وحتى الأسقف، مع الالتزام التام بالكود السعودي الجديد.</p>
-                
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div class="feature-card p-6 rounded-2xl">
-                        <h4 class="gold-text font-bold mb-2">حديد سابك</h4>
-                        <p class="text-xs text-gray-500">نستخدم أفضل أنواع الحديد الوطني لضمان المتانة القصوى.</p>
+    <section class="py-20 px-6 max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+        <div class="space-y-10">
+            <h2 class="text-4xl font-black border-r-4 border-[#C5A059] pr-6">لماذا تشيد صرحك معنا؟</h2>
+            <div class="space-y-6">
+                <div class="flex gap-4">
+                    <span class="text-[#C5A059] font-bold text-2xl">01</span>
+                    <div>
+                        <h4 class="font-bold text-xl">دقة الملي-متر</h4>
+                        <p class="text-gray-500">نطبق معايير هندسية صارمة لضمان مطابقة الواقع للمخطط بنسبة 100%.</p>
                     </div>
-                    <div class="feature-card p-6 rounded-2xl">
-                        <h4 class="gold-text font-bold mb-2">خرسانة جاهزة</h4>
-                        <p class="text-xs text-gray-500">توريد خرسانة مطابقة للمواصفات الفنية المعتمدة.</p>
+                </div>
+                <div class="flex gap-4">
+                    <span class="text-[#C5A059] font-bold text-2xl">02</span>
+                    <div>
+                        <h4 class="font-bold text-xl">خامات نخب أول</h4>
+                        <p class="text-gray-500">لا نساوم على الجودة؛ نختار أجود أنواع الحديد والخرسانة المسلحة لضمان عمر مديد للمبنى.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <span class="text-[#C5A059] font-bold text-2xl">03</span>
+                    <div>
+                        <h4 class="font-bold text-xl">إشراف هندسي شغوف</h4>
+                        <p class="text-gray-400 font-bold italic">نحن نراقب موقعك وكأننا نبني بيوتنا الخاصة.</p>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="py-20 bg-slate-950 px-6">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 text-center">
-            <div class="p-10 border border-white/5 rounded-3xl hover:bg-white/5 transition">
-                <div class="text-5xl mb-6">📐</div>
-                <h3 class="text-xl font-bold mb-4">دقة المخططات</h3>
-                <p class="text-sm text-gray-500">تحويل المخططات المعقدة إلى واقع ملموس بدقة الملليمتر.</p>
-            </div>
-            <div class="p-10 border border-gold/20 rounded-3xl bg-gold/5 transition">
-                <div class="text-5xl mb-6">🛡️</div>
-                <h3 class="text-xl font-bold mb-4">عزل متكامل</h3>
-                <p class="text-sm text-gray-500">حماية القواعد والمباني من الرطوبة والحرارة بتقنيات متطورة.</p>
-            </div>
-            <div class="p-10 border border-white/5 rounded-3xl hover:bg-white/5 transition">
-                <div class="text-5xl mb-6">👷</div>
-                <h3 class="text-xl font-bold mb-4">إشراف دائم</h3>
-                <p class="text-sm text-gray-500">تواجد مهندسين متخصصين في الموقع لضمان جودة كل مرحلة.</p>
-            </div>
+        <div class="relative group">
+            <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=800" class="rounded-3xl shadow-2xl grayscale group-hover:grayscale-0 transition duration-700">
+            <div class="absolute inset-0 border-2 border-[#C5A059] rounded-3xl -m-4 z-[-1] opacity-30"></div>
         </div>
     </section>
-
-    <footer class="py-10 border-t border-white/10 text-center">
-        <div id="screen-badge" class="inline-flex items-center gap-3 bg-white/5 border border-white/10 px-6 py-2 rounded-full text-[10px] font-mono opacity-50">
-            <span id="screen-dim">...</span>
-            <span class="w-1 h-1 bg-gold rounded-full"></span>
-            <span id="screen-type">...</span>
-        </div>
-        <p class="mt-4 text-[10px] text-gray-600 tracking-[5px]">MIDMAK AL-JANOUB © 2024</p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
