@@ -1,25 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;900&family=Montserrat:wght@900&display=swap');
+
 :root {
-    --gold: #C5A059;
-    --dark: #0A0A0A;
-    --navy: #0F172A;
+    --gold: linear-gradient(135deg, #d4af37, #f9e29d, #b38b45);
+    --bg-dark: #0a0a0a;
 }
 
 body {
-    background-color: var(--dark);
-    color: white;
-    margin: 0;
+    background: var(--bg-dark);
+    color: #fff;
+    font-family: 'Cairo', 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
-/* تأثير التدرج الذهبي للنصوص */
-.gold-gradient {
-    background: linear-gradient(135deg, #C5A059 0%, #F9E29D 50%, #B38B45 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* تأثير النص ثلاثي الأبعاد التفاعلي */
+.text-3d {
+    text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 
+                 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0,0,0,.1), 
+                 0 0 5px rgba(0,0,0,.1), 0 1px 3px rgba(0,0,0,.3), 
+                 0 3px 5px rgba(0,0,0,.2), 0 5px 10px rgba(0,0,0,.25), 
+                 0 10px 10px rgba(0,0,0,.2), 0 20px 20px rgba(0,0,0,.15);
+    transition: transform 0.3s ease;
 }
 
-/* تصميم الكروت المبتكرة */
-.service-card-new {
-    background: linear-gradient(145deg, #111, #1a1a1a);
-    border-top: 3px solid var(--gold);
+.text-3d:hover {
+    transform: perspective(500px) rotateX(10deg) rotateY(-10deg);
+    color: #f9e29d;
+}
+
+/* بطاقات التصميم الجديد */
+.glass-card {
+    background: rgba(255, 255, 255, 0.03);
+    border-radius: 20px;
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    backdrop-filter: blur(10px);
     transition: 0.5s;
+}
+
+.glass-card:hover {
+    background: rgba(212, 175, 55, 0.05);
+    transform: translateY(-10px);
 }
