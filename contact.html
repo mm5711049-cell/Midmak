@@ -3,26 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>اتصل بنا | مدماك الجنوب</title>
+    <title>تواصل معنا | مدماك الجنوب</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700;900&display=swap" rel="stylesheet">
+    <style>
+        :root { --gold: #C5A059; --dark: #0A0A0A; }
+        body { font-family: 'Cairo', sans-serif; background-color: var(--dark); color: white; }
+        .btn-whatsapp { background: var(--gold); color: var(--dark); transition: 0.4s; shadow: 0 0 20px rgba(197, 160, 89, 0.3); }
+        .btn-whatsapp:hover { background: white; transform: scale(1.05); }
+    </style>
 </head>
-<body class="bg-gray-100 font-['Cairo']">
-    <section class="py-20 px-4">
-        <div class="max-w-lg mx-auto bg-white p-8 rounded-2xl shadow-2xl">
-            <h2 class="text-2xl font-bold mb-6 text-center text-blue-900">أرسل لنا استفسارك</h2>
-            <form class="space-y-4">
-                <input type="text" placeholder="الاسم الكريم" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                <input type="tel" placeholder="رقم الجوال" class="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-500 outline-none">
-                <select class="w-full p-3 border rounded-lg">
-                    <option>نوع الخدمة</option>
-                    <option>بناء عظم</option>
-                    <option>استفسار عن عقار</option>
-                    <option>أخرى</option>
-                </select>
-                <textarea placeholder="تفاصيل الطلب" class="w-full p-3 border rounded-lg h-32"></textarea>
-                <button class="w-full bg-blue-900 text-white py-3 rounded-lg font-bold hover:bg-yellow-600 transition">إرسال الطلب</button>
-            </form>
+<body class="h-screen flex flex-col">
+    <nav class="p-6 border-b border-white/10 flex justify-between items-center">
+        <a href="index.html" class="text-gold font-bold">← الرئيسية</a>
+        <div class="text-xl font-black color: var(--gold);">CONTACT US</div>
+    </nav>
+
+    <main class="flex-grow flex items-center justify-center px-6">
+        <div class="max-w-xl w-full text-center">
+            <h2 class="text-4xl font-black mb-8">لنبدأ <span class="text-[#C5A059]">مشروعك</span> القادم</h2>
+            <p class="text-gray-500 mb-12">فريقنا الهندسي جاهز لتقديم الاستشارات الفنية والمالية لمشروعك في أي وقت.</p>
+            
+            <a href="https://wa.me/9665XXXXXXXX" class="btn-whatsapp inline-flex items-center gap-4 px-12 py-5 rounded-full text-xl font-black shadow-2xl">
+                <span>تحدث معنا عبر الواتساب</span>
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347"/></svg>
+            </a>
         </div>
-    </section>
+    </main>
+
+    <footer class="py-10 text-center">
+        <div id="screen-badge" class="inline-block bg-white/5 border border-white/10 px-6 py-2 rounded-full text-[10px] font-mono opacity-50">
+            <span id="screen-dim">...</span> | <span id="screen-type">...</span>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
