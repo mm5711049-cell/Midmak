@@ -1,52 +1,25 @@
 :root {
-    --gold: #D4AF37;
-    --navy: #001F3F;
-    --black: #050505;
-    --white: #ffffff;
+    --gold: #C5A059;
+    --dark: #0A0A0A;
+    --navy: #0F172A;
 }
 
 body {
-    font-family: 'Cairo', sans-serif;
-    background-color: var(--black);
-    color: var(--white);
+    background-color: var(--dark);
+    color: white;
     margin: 0;
-    scroll-behavior: smooth;
 }
 
-/* الهوية البصرية الجديدة */
-.bg-navy { background-color: var(--navy); }
-.text-gold { color: var(--gold); }
-.border-gold { border-color: var(--gold); }
-
-.glass-card {
-    background: rgba(255, 255, 255, 0.05);
-    backdrop-filter: blur(10px);
-    border: 1px solid rgba(212, 175, 55, 0.3);
-    transition: 0.3s ease;
+/* تأثير التدرج الذهبي للنصوص */
+.gold-gradient {
+    background: linear-gradient(135deg, #C5A059 0%, #F9E29D 50%, #B38B45 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
-.glass-card:hover {
-    border-color: var(--gold);
-    transform: translateY(-5px);
-}
-
-.lang-switch {
-    cursor: pointer;
-    border: 1px solid var(--gold);
-    padding: 5px 15px;
-    border-radius: 20px;
-    color: var(--gold);
-}
-
-/* كاشف الشاشة المطور */
-#screen-info {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background: rgba(0, 31, 63, 0.9);
-    border-top: 1px solid var(--gold);
-    padding: 5px;
-    font-size: 10px;
-    text-align: center;
-    z-index: 1000;
+/* تصميم الكروت المبتكرة */
+.service-card-new {
+    background: linear-gradient(145deg, #111, #1a1a1a);
+    border-top: 3px solid var(--gold);
+    transition: 0.5s;
 }
