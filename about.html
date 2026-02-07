@@ -3,64 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>من نحن | مؤسسة مدماك الجنوب</title>
+    <title>فلسفتنا | مدماك الجنوب</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Cairo', sans-serif; }
-        .about-hero { background: linear-gradient(rgba(30, 58, 138, 0.8), rgba(30, 58, 138, 0.8)), url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1200'); background-size: cover; background-position: center; }
-        .glass-card { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
+        :root { --gold: #C5A059; --dark: #0A0A0A; }
+        body { font-family: 'Cairo', sans-serif; background-color: var(--dark); color: white; }
+        .gold-text { color: var(--gold); }
+        .glass-panel { background: rgba(255, 255, 255, 0.03); border: 1px solid rgba(197, 160, 89, 0.2); backdrop-blur: 10px; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800">
-
-    <nav class="bg-white shadow-sm p-4 sticky top-0 z-50">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <a href="index.html" class="text-blue-900 font-bold hover:text-blue-700 transition"><i class="fas fa-home ml-2"></i>الرئيسية</a>
-            <span class="font-black text-blue-900">مدماك الجنوب</span>
-        </div>
+<body>
+    <nav class="p-6 border-b border-white/10 flex justify-between items-center">
+        <a href="index.html" class="text-gold font-bold">← العودة</a>
+        <div class="text-xl font-black gold-text">OUR PHILOSOPHY</div>
     </nav>
 
-    <header class="about-hero py-24 text-center text-white px-6">
-        <h1 class="text-4xl md:text-5xl font-black mb-4">قصة مدماك الجنوب</h1>
-        <p class="text-xl text-blue-100 max-w-2xl mx-auto">نحن لسنا مجرد مؤسسة بناء، نحن شركاء في إعمار المستقبل بجودة هندسية لا تضاهى.</p>
-    </header>
-
-    <section class="py-20 px-6 max-w-6xl mx-auto">
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-                <h2 class="text-3xl font-black text-blue-900 mb-6 border-r-8 border-yellow-500 pr-4">من نحن؟</h2>
-                <p class="text-lg leading-relaxed text-gray-600 mb-6">تأسست **مؤسسة مدماك الجنوب** لتكون ركيزة أساسية في قطاع المقاولات والعقارات في المنطقة الجنوبية، ملتزمين بتقديم خدمات بناء العظم والتشييد بأعلى المعايير المهنية والكود السعودي.</p>
-                <div class="grid grid-cols-2 gap-4">
-                    <div class="p-4 bg-white rounded-2xl shadow-sm border-b-4 border-blue-900">
-                        <h4 class="font-bold text-blue-900 mb-2">رؤيتنا</h4>
-                        <p class="text-sm text-gray-500">أن نكون الخيار الأول في جودة البناء العظم بالجنوب.</p>
-                    </div>
-                    <div class="p-4 bg-white rounded-2xl shadow-sm border-b-4 border-yellow-500">
-                        <h4 class="font-bold text-blue-900 mb-2">رسالتنا</h4>
-                        <p class="text-sm text-gray-500">تقديم بناء آمن، مستدام، وبدقة هندسية متناهية.</p>
-                    </div>
-                </div>
+    <section class="py-24 px-6 max-w-5xl mx-auto text-center">
+        <h1 class="text-5xl font-black mb-12 animate__animated animate__fadeIn">إرث من <span class="gold-text">الثقة</span></h1>
+        <div class="grid md:grid-cols-2 gap-8 text-right">
+            <div class="glass-panel p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4 gold-text">رؤيتنا</h3>
+                <p class="text-gray-400 leading-relaxed">أن نعيد تعريف مفهوم المقاولات في الجنوب السعودي من خلال دمج القوة الإنشائية بالفخامة المعمارية الحديثة.</p>
             </div>
-            <div class="relative">
-                <img src="https://images.unsplash.com/photo-1541888946425-d81bb19480c5?q=80&w=800" class="rounded-3xl shadow-2xl transition hover:scale-105 duration-500">
-                <div class="absolute -bottom-6 -right-6 bg-yellow-500 text-blue-900 p-6 rounded-2xl shadow-xl hidden md:block">
-                    <p class="font-black text-2xl">+10</p>
-                    <p class="text-xs font-bold uppercase tracking-tighter">سنوات من الخبرة</p>
-                </div>
+            <div class="glass-panel p-10 rounded-3xl">
+                <h3 class="text-2xl font-bold mb-4 gold-text">رسالتنا</h3>
+                <p class="text-gray-400 leading-relaxed">الالتزام بأعلى معايير الجودة والأمان، وتحويل تطلعات عملائنا إلى صروح عمرانية تدوم للأبد.</p>
             </div>
         </div>
     </section>
 
-    <footer class="bg-blue-900 text-white py-12 px-6 text-center">
-        <div id="screen-info" class="inline-flex gap-4 bg-white/10 px-4 py-2 rounded-full text-[10px] mb-4">
-            <span id="screen-dim">--</span> | <span id="screen-type">--</span>
-        </div>
-        <p class="text-blue-200">© 2024 مدماك الجنوب. جودة نبني بها المستقبل.</p>
-    </footer>
-
+    <footer class="py-10 text-center opacity-30 text-[10px] tracking-[5px]">MIDMAK AL-JANOUB</footer>
     <script src="script.js"></script>
 </body>
 </html>
